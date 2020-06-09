@@ -1,0 +1,7 @@
+Projekt na bardzo wstępnym etapie. Brak wyników.
+
+Podejście oprate na 2-D UNet jest poprawne jednak sposób wykorzystania sieci jest błędny.
+1) Nie należy dokonywać konwersji danych wejściowych do postaci binarnej. 
+2) Funkcja kosztu bazująca na różnicy średniokwadratowej nie będzie użyteczna w kontekście segmetnacji.
+3) Jako dane wejściowe powinny być traktowane kolejne przekroje 2-D, wyjściem z sieci powinna być maska binarna (bądź mapa prawdopodobieństwa).
+4) "Wybranie obrazu z najlepszymi cechami" jest dla mnie niezrozumiałe. Jaki jest cel tej operacji?
